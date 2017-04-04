@@ -1,0 +1,44 @@
+body{width:100%;height:100%;font-family:"微软雅黑",Arial;background:#eee;}
+li,ul{padding:0;list-style-type:none}
+a{color:#666}
+.color-orange{color:#ff7800}
+.color-blue{color:#11b6ca}
+.color-white,.color-white a{color:#fff}
+header{width:13%;height:100%;position:fixed;left:0;top:0;background:url(../images/header_article_bg.jpg) repeat;text-align:center;}
+header .logo{width:100%;margin:20% 0;}
+header .logo img{width:80%;}
+header .menu{line-height:40px;font-size:18px;}
+header .qrcode{width:100%;margin:10% 0}
+header .qrcode img{width:80%;}
+header .contact{width:100%;position:absolute;bottom:5%;line-height:2em}
+.article{width:85%;margin-left:15%;padding:2% 0;}
+.article .position{width:100%;height:30px;line-height:30px;background:url(../images/position.png) left no-repeat;text-indent:30px;}
+.article .gallery{width:100%;}
+.article .gallery ul{height:auto;overflow:hidden;}
+.article .gallery li{display:inline-block;width:400px;height:300px;line-height:30px;background:#fff;border-bottom:#11b6ca 2px solid;margin:2%;text-align:center;}
+.article .gallery li img{width:100%;}
+.article .list{width:100%;font-size:16px;line-height:30px;margin:2% 0;}
+.article .list img{width:100%;}
+.article .list li{width:100%;margin-bottom:1%;padding-bottom:1%;border-bottom:#ddd 1px solid;overflow:hidden;}
+.article .list h3{width:100%;height:30px;line-height:30px;margin:10px 0;}
+.article .list .area-left{width:20%;height:150px;float:left;overflow:hidden;}
+.article .list .area-right{width:78%;height:100%;float:right;}
+.article .mainbody{font-size:14px;}
+.article .mainbody h1{color:#11b6ca}
+.article .mainbody .info{border-bottom:#aaa 1px dotted;margin:1% 0;padding:1% 0;}
+.article .mainbody .description{color:#999}
+.article .gallery-content img{width:1000px;margin:1% 0;border:#fff 5px solid;border-radius:5px;box-shadow:0 0 5px #999}
+.prenext{width:100%;line-height:30px;border-top:#aaa 1px dotted;}
+.prenext li{display:inline-block;margin:0 1%;}
+.pages li{display:inline-block;}
+@media screen and (max-width:800px){
+header{display:none;}
+.article{width:96%;margin:2%}
+.article .gallery li{width:100%;height:auto;float:left;}
+.article .list .area-left{width:0%;height:150px;float:left;overflow:hidden;}
+.article .list .area-right{width:100%;height:100%;float:right;}
+.article .list h3{font-size:18px}
+.article .mainbody .content img{width:95%}
+.article .mainbody .description{display:none;}
+.article .gallery-content img{width:95%;}
+}

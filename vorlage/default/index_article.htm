@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.typename/} - {dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+<meta name="copyright" content="Copyright honeyswedding.cn 版权所有"/>
+<link href="/css/bootstrap.min.css?v=3.3.5" rel="stylesheet"/>
+<link href="/css/article.min.css?v=1.0.0" rel="stylesheet"/>
+</head>
+<body>
+    {dede:include filename='header_article.htm'/}
+    
+    <div class="article">
+        <div class="position">
+            {dede:field name='position'/}
+        </div>
+        <div class="mainbody">
+            <h1>{dede:field.typename/}</h1>
+            <div class="content">{dede:field.content/}</div>
+        </div>
+    </div>
+    {dede:include filename='footer.htm'/}
+</body>
+</html>

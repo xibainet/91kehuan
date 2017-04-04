@@ -1,0 +1,90 @@
+body{width:100%;height:100%;font-family:"微软雅黑",Arial}
+header{width:100%;color:#666}
+li,ul{padding:0;list-style-type:none}
+a{color:#666}
+label{width:100%;height:35px;line-height:60px;font-size:36px;font-family:arial;text-align:center;margin-top:2em;letter-spacing:1px}
+.color-orange{color:#ff7800}
+.color-blue{color:#11b6ca}
+.color-white,.color-white a{color:#fff}
+.more{position:relative;width:100%;margin-top:3%;text-align:center;}
+header{position:fixed;height:55px;z-index:999}
+header .bg{position:absolute;width:100%;height:100%;background:#000;opacity:.7;-moz-opacity:.7;z-index:-1}
+header .logo{position:fixed;top:5px;left:50px;width:185px;height:45px}
+header .menu{position:fixed;top:10px;left:0;width:100%;height:35px;line-height:35px;letter-spacing:2px;text-align:center}
+header .menu li{margin:0 10px;display:inline-block;font-size:16px}
+header .menu li a{cursor:pointer}
+header .menu li a:hover{color:#11b6ca;text-decoration:none}
+header .menu li.active a{color:#11b6ca}
+header .tel{position:fixed;top:10px;right:50px;height:35px;line-height:35px;font-family:arial;font-size:18px;letter-spacing:1px;color:#fff}
+.section{position:relative;}
+.swiper-container{width:100%;height:100%}
+.swiper-slide{text-align:center;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;align-items:center}
+.swiper-slide .text-area{padding:10px;background:#000;opacity:.7;-moz-opacity:.7;border-radius:10px;font-size:24px;color:#fff}
+.swiper-wrapper .wallpaper_1{background:url(../images/wallpaper_1.jpg) center;background-size:auto 100%;}
+.swiper-wrapper .wallpaper_2{background:url(../images/wallpaper_2.jpg) center;background-size:auto 100%;}
+.swiper-wrapper .wallpaper_3{background:url(../images/wallpaper_3.jpg) center;background-size:auto 100%;}
+.swiper-wrapper .wallpaper_4{background:url(../images/wallpaper_4.jpg) center;background-size:auto 100%;}
+.index-news{width:100%;height:125px;line-height:25px;position:absolute;bottom:25px;z-index:9999;}
+.index-news ul{width:30%;height:100%;float:left;color:#0f8093;text-align:center;margin:0 1%;background:#000;opacity:0.3;filter:alpha(opacity=30);border-radius:20px}
+.index-news ul div{font-weight:bold;font-size:15px;}
+.index-news ul li{width:100%;height:25px;line-height:25px;}
+.index-news ul li a{color:#0f8093;}
+.section-base{width:100%;height:100%;position:relative;background-size:cover;}
+.section-case{background:url(../images/section_case_bg.jpg) center}
+.section-case .swiper-container{width:600px;height:400px;margin:0 auto;margin-top:3em}
+.section-case .swiper-slide{background-position:center;background-size:cover}
+.section-case .swiper-slide a{width:100%;height:60px;line-height:30px;background:#000;opacity:.7;-moz-opacity:.7;position:absolute;left:0;bottom:0;text-align:center;font-size:16px}
+.section-video{background:url(../images/section_video_bg.jpg) center;background-size:auto 100%;}
+.section-video ul{width:100%;position:absolute;top:35%;text-align:center}
+.section-video li{margin:0 60px;display:inline-block;font-size:20px;line-height:100px}
+.section-video li img{width:100%;}
+.section-fleet{background:url(../images/section_fleet_bg.jpg) 100% center;background-size:auto 100%;}
+.section-fleet ul{width:100%;height:200px;text-align:center;margin-top:5%;}
+.section-fleet li{width:200px;height:200px;display:inline-block;overflow:hidden}
+.section-fleet li img{width:100%;}
+.section-our{background:url(../images/section_our_bg.jpg) center;background-size:auto 100%;}
+.section-our .info{width:40%;padding:2%;position:absolute;right:10%;top:20%;font-size:14px;line-height:30px;color:#fff;text-shadow:0 0 10px #000}
+.section-news{background:url(../images/section_news_bg.jpg) center}
+.section-news ul{width:1000px;height:auto;overflow:hidden;margin:0 auto;margin-top:2em}
+.section-news li{width:500px;height:auto;line-height:25px;border-bottom:#ccc 1px solid;padding:20px 0;float:left;overflow:hidden}
+.section-news li h4{height:25px;line-height:25px;margin:0;padding:0;overflow:hidden;}
+.section-news li .thumb{width:120px;height:80px;float:left;overflow:hidden}
+.section-news li .thumb img{width:140px}
+.section-news li .news{width:360px;height:80px;float:right;padding-right:20px}
+.section-contact{background:url(../images/section_contact_bg.jpg) center}
+.section-contact label{margin-top:15%;}
+.section-contact .content{width:1000px;margin:0 auto;margin-top:5%;}
+.section-contact .content .left{width:340px;float:left;}
+.section-contact .content .left img{width:150px;}
+.section-contact .content .center{width:480px;float:left;padding-top:3%;}
+.section-contact .content .right{width:180px;float:right;padding-top:3%;}
+.section-contact .footer{width:100%;height:260px;position:absolute;bottom:0;left:0;background:url(../images/footer.jpg) center;background-size:cover;}
+@media screen and (max-height:650px){
+.section-contact label{margin-top:10%;}
+.section-contact .content{margin-top:1%;}
+}
+@media screen and (max-width:800px){
+label{font-size:24px;}
+header .menu{display:none;}
+header .logo{left:0px;}
+header .logo img{height:100%;}
+header .tel{right:5px}
+.swiper-pagination-bullets{bottom:25px !important;}
+.swiper-slide .text-area{width:95%;font-size:18px;}
+.section-case .swiper-container{width:95%;height:300px;}
+.section-video li{width:15%;margin:0 30px;}
+.section-fleet li{width:31%;}
+.section-our .info{width:95%;position:relative;padding:0;right:0;margin:0 auto;}
+.section-our .info h1{font-size:28px;text-align:right;}
+.section-news ul{width:100%;}
+.section-news li{width:100%;float:none;padding-bottom:5px;}
+.section-news li .thumb{display:none;width:0}
+.section-news li .thumb img{width:100%}
+.section-news li .news{width:95%;height:25px;float:right;}
+.section-contact .content{width:100%;margin:0 auto;margin-top:5%;}
+.section-contact .content .left{width:100%;text-align:center;position:absolute;bottom:10%}
+.section-contact .content .left img{width:150px;}
+.section-contact .content .center{width:100%;float:left;padding-top:10%;text-align:left;padding-left:10%;}
+.section-contact .content .right{width:100%;float:left;padding-top:3%;padding-left:10%;}
+.section-contact .footer{display:none;}
+}

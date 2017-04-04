@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+<meta name="copyright" content="Copyright honeyswedding.cn 版权所有"/>
+<base target="_blank">
+<link href="/css/bootstrap.min.css?v=3.3.5" rel="stylesheet"/>
+<link href="/css/swiper.min.css?v=3.3.1" rel="stylesheet"/>
+<link href="/css/index.min.css?v=1.0.1" rel="stylesheet"/>
+</head>
+<body>
+    {dede:include filename='header.htm'/}
+    <div id="fullpage">
+        <div class="section">
+            <div id="swiper-wallpaper" class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide wallpaper_1">
+                        <div class="text-area">
+                            把<span class="color-orange">诺言</span>兑换成现实的一场欢喜征程，我们见证！</br>
+                            THE <span class="color-blue">PROMISE</span> OF A REAL JOY INTO THE JOURNEY WE WITNESS
+                        </div>
+                    </div>
+                    <div class="swiper-slide wallpaper_2">
+                        <div class="text-area">
+                            <span class="color-orange">十五</span>年，陪伴新人与信任走过</br>
+                            成立于<span class="color-blue">2003</span>年，为您打造最理想的婚礼。
+                        </div>
+                    </div>
+                    <div class="swiper-slide wallpaper_3">
+                        <div class="text-area">
+                            婚礼<span class="color-orange">策划</span>，<span class="color-orange">婚庆</span>公司，<span class="color-blue">定制</span>婚礼</br>
+                            婚礼相关的布展、声光、司仪、跟妆、摄影摄像、车队等全方位服务服务。
+                        </div>
+                    </div>
+                    <div class="swiper-slide wallpaper_4"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+			<div class="index-news">
+				<ul>
+					<div>资讯</div>
+					{dede:arclist typeid='5' row='4' orderby='pubdate'}
+                    <li><a href="[field:arcurl/]">[field:fulltitle/]</a></li>
+                    {/dede:arclist}
+				</ul>
+				<ul>
+					<div>案例</div>
+					{dede:arclist typeid='1' row='4' orderby='pubdate'}
+                    <li><a href="[field:arcurl/]">[field:fulltitle/]</a></li>
+                    {/dede:arclist}
+				</ul>
+				<ul>
+					<div>视频</div>
+					{dede:arclist typeid='2' row='4' orderby='pubdate'}
+                    <li><a href="[field:arcurl/]">[field:fulltitle/]</a></li>
+                    {/dede:arclist}
+				</ul>
+			</div>
+        </div>
+        <div class="section">
+            <div class="section-case section-base">
+                <label><span class="color-blue">CASE</span></br>婚礼</label>
+                <div id="swiper-case" class="swiper-container">
+                    <div class="swiper-wrapper color-white">
+                        {dede:arclist typeid='1' flag='p' limit='0,9' order='pubdate'}
+                        <div class="swiper-slide" style="background-image:url([field:litpic/])"><a href="[field:arcurl/]">[field:fulltitle/]</a></div>
+                        {/dede:arclist}
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="more">
+                    {dede:type typeid='1'}<a href="[field:typelink/]" class="btn btn-success">更多</a>{/dede:type}
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-video section-base">
+                <label><span class="color-blue">VIDEO</span></br><span class="color-white">视频</span></label>
+                <ul class="color-white">
+                    {dede:type typeid='11'}<li><a href="[field:typelink/]"><img src="/images/section_video_ico_01.png" /></br>[field:typename/]</a></li>{/dede:type}
+                    {dede:type typeid='12'}<li><a href="[field:typelink/]"><img src="/images/section_video_ico_02.png" /></br>[field:typename/]</a></li>{/dede:type}
+                    {dede:type typeid='13'}<li><a href="[field:typelink/]"><img src="/images/section_video_ico_03.png" /></br>[field:typename/]</a></li>{/dede:type}
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-fleet section-base">
+                <label><span class="color-blue">FLEET</span></br><span class="color-white">车队</span></label>
+                <ul>
+                    <li><img src="/images/section_fleet_01.png" /></li>
+                    <li><img src="/images/section_fleet_02.png" /></li>
+                    <li><img src="/images/section_fleet_03.png" /></li>
+                    <li><img src="/images/section_fleet_04.png" /></li>
+                    <li><img src="/images/section_fleet_05.png" /></li>
+                    <li><img src="/images/section_fleet_06.png" /></li>
+                    <li><img src="/images/section_fleet_07.png" /></li>
+                    <li><img src="/images/section_fleet_08.png" /></li>
+                    <li><img src="/images/section_fleet_09.png" /></li>
+                    <li><img src="/images/section_fleet_10.png" /></li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-our section-base">
+                <div class="info">
+                    <h1 class="color-blue">天津哈尼文化传播有限公司</h1></br>
+                    　　天津哈尼时尚婚礼为新人量身定制专业、高端、个性的婚礼策划。提供与婚礼相关的布展、声光、司仪、跟妆、摄影摄像、车队等全方位服务服务。</br>
+                    　　公司依托自己十年的专业能力的积淀为广大新人提供超过数千场婚礼的相关服务，是一家综合型的专业婚庆机构。</br>
+                    　　天津哈尼文化传播有限公司最早成立于2003年，针对不同的客户群，我们有“天津哈尼时尚婚礼”，“天津最爱婚纱摄影婚礼策划部”,“Doca film”，“安徽哈尼时尚婚礼”携手为您打造最理想的婚礼。</br>
+                    　　继承了总公司多年从事大型公司演出策划、会议布展的经验，哈尼打造的婚礼，不仅有新颖夺目的会场布置、独特闪耀的舞台设计、创意难忘的婚礼环节。更胜在每一个细节的精致。
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-news section-base">
+                <label><span class="color-blue">NEWS</span></br><span class="color-white">资讯</span></label>
+                <ul>
+                    {dede:arclist typeid='5' row='6' flag='p' orderby='pubdate'}
+                    <li>
+                        <div class="thumb"><a href="[field:arcurl/]"><img src="[field:litpic/]" alt="[field:fulltitle/]" title="[field:fulltitle/]" /></a></div>
+                        <div class="news"><h4><a href="[field:arcurl/]">[field:fulltitle/]</a></h4><span class="c-gray f-12">[field:description function="cn_substr(@me,120)"/]</span></div>
+                    </li>
+                    {/dede:arclist}
+                </ul>
+                <div class="more">
+                    {dede:type typeid='5'}<a href="[field:typelink/]" class="btn btn-success">更多</a>{/dede:type}
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-contact section-base">
+                <label><span class="color-blue">Contact</span></br><span class="color-white">联系</span></label>
+                <div class="content">
+                    <div class="left"><img src="/images/qrcode.jpg" /></div>
+                    <div class="center">
+                        <span class="color-orange">天津婚礼策划 天津婚庆公司 天津定制婚礼</span></br>
+                        公司地址</br>
+                        天津市河北区博爱道1号君临天下2927室</br>
+                        （海河北安桥附近）
+                    </div>
+                    <div class="right">
+                        24H热线：18602257356</br>
+                        Copyright: 2016</br>
+                        哈尼时尚婚礼 版权所有</br>
+                        津ICP备16003769号
+                    </div>
+                </div>
+                <div class="footer"></div>
+            </div>
+        </div>
+    </div>
+    {dede:include filename='footer.htm'/}
+    
+    <script src="/js/jquery.min.js?v=3.1.1"></script>
+    <script src="/js/jquery.fullpage.min.js?v=2.8.8"></script>
+    <script src="/js/swiper.jquery.min.js?v=3.3.1"></script>
+    <script>
+        <!-- Initialize Swiper -->
+        var swiper = new Swiper('#swiper-wallpaper', {
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            paginationClickable: true,
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: 5000,
+            autoplayDisableOnInteraction: false
+        });
+        
+        var swiper = new Swiper('#swiper-case', {
+            pagination: '.swiper-pagination',
+            effect: 'cube',
+            grabCursor: true,
+            cube: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94
+            },
+            autoplay: 8000,
+            autoplayDisableOnInteraction: false
+        });
+        
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+                verticalCentered: true,
+                anchors: ['menu1', 'menu2', 'menu3', 'menu4', 'menu5', 'menu6', 'menu7'],
+                menu: '.menu',
+				sectionsColor: ['#000', '#f1f2f3', '#7BAABE', 'whitesmoke', '#ccddff', '#ddd', '#fff']
+			});
+            
+		});
+	</script>
+</body>
+</html>

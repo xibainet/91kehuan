@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.typename/} - {dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+<meta name="copyright" content="Copyright honeyswedding.cn 版权所有"/>
+<link href="/css/bootstrap.min.css?v=3.3.5" rel="stylesheet"/>
+<link href="/css/article.min.css?v=1.0.1" rel="stylesheet"/>
+</head>
+<body>
+    {dede:include filename='header_article.htm'/}
+    
+    <div class="article">
+        <div class="position">
+            {dede:field name='position'/}
+        </div>
+        <div class="list">
+            <ul>
+                {dede:list pagesize='10'}
+                <li>
+                    <div class="area-left"><a href="[field:arcurl/]"><img src="[field:litpic/]" title="[field:fulltitle/]" /></a></div>
+                    <div class="area-right">
+                        <h3><a href="[field:arcurl/]">[field:fulltitle/]</a></h3>
+                        <div>　　[field:description function="cn_substr(@me,200)"/]</div>
+                    </div>
+                </li>
+                {/dede:list}
+            </ul>
+        </div>
+        <div class="pages t-center">{dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="5"/}</div>
+    </div>
+    {dede:include filename='footer.htm'/}
+    
+    <script src="/js/jquery.min.js?v=3.1.1"></script>
+    <script src="/js/jquery.lazyload.min.js?v=3.1.1"></script>
+    <script>
+		$(document).ready(function() {
+            $("img.lazy").lazyload({effect: "fadeIn"});
+		});
+	</script>
+</body>
+</html>
